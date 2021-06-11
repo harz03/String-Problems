@@ -5,20 +5,17 @@
 
 using namespace std;
 
-
+string para = "this is the test string to use the string find method";
 
 int main(){
 			#ifndef ONLINE_JUDGE
 	freopen("input.txt", "r", stdin);
 	freopen("output.txt", "w", stdout);
 #endif
-	string s;
-
-	cin>>s;
-	cout<<s<<endl;
-	getline(cin,s); /// getling(cin,inputname,termaintion)
-	cout<<s<<endl;
-	getline(cin,s,'.');
-	cout<<s;
+	
+	cout<<para.find("use")<<endl; //var_name.find return index of string where it found
+	//if string not find it will return unsigned intger value  = -1;
+	//https://www.cplusplus.com/reference/string/string/find/
+	
 	return 0;	
 }
